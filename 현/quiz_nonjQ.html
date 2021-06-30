@@ -1,0 +1,145 @@
+<!-- 카테고리: (최신 시사, 정치•행정, 경제•산업, 사회•환경, 국제•외교, 북한•안보, 문화•미디어, 과학•IT, 스포츠•엔터, 인물•용어)
+      문제: (기여 점수/예상 레벨)가 나오고 풀면 정답여부없이 정답해설
+  #F0CBB0
+	#8C6751
+	#AF8C72
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="quiz nonjQ.css">
+    <title>ACROPOLIS</title>
+</head>
+<body>
+    <div class="b-example-divider"></div>
+      <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="home.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+              <img src="/img/logo.png" class="bi me-2" width="80" height="50" role="img" aria-label="Bootstrap">
+            </a>
+            
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 link-dark">교육</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">퀴즈</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">커뮤니티</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+            </form>
+
+            <div class="dropdown text-end">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="flexMain">
+      <h2>"이민수"님 <span class="acropolis">아크로폴리스 퀴즈</span>에 오신 것을 환영합니다.</h2>
+      <nav>
+        <div class="categoryChooseBox" style="flex-wrap: wrap;">
+          <div class="categoryChoose"><strong>최신 시사</strong></div>
+          <div class="categoryChoose"><strong>정치 • 행정</strong></div>
+          <div class="categoryChoose"><strong>경제 • 산업</strong></div>
+          <div class="categoryChoose"><strong>사회 • 환경</strong></div>
+          <div class="categoryChoose"><strong>국제 • 외교</strong></div>
+          <div class="categoryChoose"><strong>북한 • 안보</strong></div>
+          <div style="width: 1000px; height: auto; display: flex; justify-content: center; align-items: center;">
+            <div class="categoryChoose"><strong>문화 • 미디어</strong></div>
+            <div class="categoryChoose" onClick="location.href='./quiz_nonjQ_2.html'"><strong>과학•IT</strong></div>
+            <div class="categoryChoose"><strong>스포츠 • 엔터</strong></div>
+            <div class="categoryChoose"><strong>인물 • 용어</strong></div>
+          </div>
+        </div>
+      </nav>
+      <section id="quizBox">
+        <article id="quiz1"> 
+          <div style="width: 900px; height: 200px;  padding-left: 100px;">
+            <span id="questionNum" >
+              1351번 문제
+            </span>
+            <div id="question" style="padding: 30px; font-size: 19px; cursor:auto">
+              우리나라 수도는 어디일까요?
+              <!-- <div id="hint">
+                수도(首都)는 한 국가의 정치, 행정의 중심이 되는 도시를 말한다. 수도에는 대부분 중앙정부가 소재해, 국가원수 등 국가의 최고 지도자가 거점으로 두는 도시이다. 
+              </div>       -->
+            </div>
+          </div>
+          <span id="next1" style=" margin-right: 50px;">
+            이전
+          </span>
+          <div id="answerBox">
+            <div id="quiz1answer1" onClick="location.href='./quiz_nonjQAnswer.html'">
+              인천
+            </div>
+            <div id="quiz1answer2" onClick="location.href='./quiz_nonjQAnswer.html'">
+              제주
+            </div>
+            <div id="quiz1answer3" onClick="location.href='./quiz_nonjQAnswer.html'">
+              부산
+            </div>
+            <div id="quiz1answer4"  onClick="location.href='./quiz_nonjQAnswer.html'">
+              서울
+            </div>
+          </div>
+          <span id="next2" style="margin-left: 50px;" onClick="location.href='./quiz_nonjQ_2.html'">
+            다음
+          </span>
+        </article>
+        
+        <!-- <article id="explanation">
+          <div style="width: 100%; height: auto; border-radius: 5px; padding-left: 10px;">
+            답 : 4번, 대한민국의 수도는 현재 서울이다.
+          </div>        
+        </article> -->
+        <article id="score">
+          <div id="user">
+            <div style="width: auto; height: auto; background-color: white; border-radius: 5px; padding-left: 10px;">
+              <span>이름 : 김나박이</span>
+              <span style="margin-left: 100px;">관심 설정 분야 : 최신 시사, 북한•안보, 과학•IT ...</span>
+              <span style="margin-left: 100px;">관심 레벨 : 13</span>
+            </div>
+            <div id="expBox">
+              <div id="exp"></div>
+              10 / 700
+            </div>
+          </div>
+        </article>
+        <article id="commentBox">
+          <div id="writeComment">
+            <div style="padding: 15px 0px 5px 0px; display: flex; justify-content: space-around;">
+              <textarea name="myComment" id="textareaID" cols="100" rows="3"></textarea>
+              <form action="" method='POST' style="float: right;">
+                <input type='submit' style="height: 80px; width: 100px;" value="댓글달기">
+              </form>
+            </div>
+            <div id="otherComment">
+              익명(152asd241) : 이거 못 맞추면 대한민국 국민이 아니지~
+              <br>
+              익명(153efq547) : EZ
+              <br>
+              익명(153xps115) : 손풀기로 좋네요 ㅎㅎ
+              <br>
+            </div>
+          </div>
+        </article>
+      </section>
+    </div>
+</body>
+</html>
