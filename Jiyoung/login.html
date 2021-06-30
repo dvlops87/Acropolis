@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <title>ACROPOLIS</title>
+</head>
+<body>
+    <div class="b-example-divider"></div>
+      <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="login.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+              <img src="logo.png" class="bi me-2" width="80" height="50" role="img" aria-label="Bootstrap">
+            </a>
+            
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="#" class="nav-link px-2 link-dark">교육</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">퀴즈</a></li>
+              <li><a href="#" class="nav-link px-2 link-dark">커뮤니티</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control" placeholder="Search" aria-label="Search">
+            </form>
+            
+            <div class="dropdown text-end">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                </a>
+
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">마이페이지</a></li>
+                <li><a class="dropdown-item" href="#">나의 퀴즈</a></li>
+                <li><a class="dropdown-item" href="#">나의 게시글</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="./home.html">로그아웃</a></li>
+              </ul>
+        </div>
+      </div>
+    </header>
+    
+    <div class="news-title">
+      <p><h4>알아두면 좋은 지식과 상식!</h4></p>
+    </div>
+
+    <div class="slidebox">
+      <input type="radio" name="slide" id="slide01" checked>
+      <input type="radio" name="slide" id="slide02">
+      <input type="radio" name="slide" id="slide03">
+      <input type="radio" name="slide" id="slide04">
+      <ul class="slidelist">
+        <li class="slideitem">
+          <div>
+            <label for="slide04" class="left"></label>
+            <label for="slide02" class="right"></label>
+            <a href="#"><img src="./image/1.jpg"></a>
+            <a href="#"><img src="./image/2.jpg"></a>
+            <a href="#"><img src="./image/3.jpg"></a>
+            <a href="#"><img src="./image/4.jpg"></a>
+          </div>
+        </li>
+        <li class="slideitem">
+          <div>
+            <label for="slide01" class="left"></label>
+            <label for="slide03" class="right"></label>
+            <a href="#"><img src="./image/5.jpg"></a>
+            <a href="#"><img src="./image/6.jpg"></a>
+            <a href="#"><img src="./image/7.jpg"></a>
+            <a href="#"><img src="./image/8.jpg"></a>
+          </div>
+        </li>
+        <li class="slideitem">
+          <div>
+            <label for="slide02" class="left"></label>
+            <label for="slide04" class="right"></label>
+            <a href="#"><img src="./image/9.jpg"></a>
+            <a href="#"><img src="./image/10.jpg"></a>
+            <a href="#"><img src="./image/12.jpg"></a>
+            <a href="#"><img src="./image/15.jpg"></a>
+          </div>
+        </li>
+        <li class="slideitem">
+          <div>
+            <label for="slide03" class="left"></label>
+            <label for="slide01" class="right"></label>
+            <a href="#"><img src="./image/11.jpg"></a>
+            <a href="#"><img src="./image/13.jpg"></a>
+            <a href="#"><img src="./image/14.jpg"></a>
+            <a href="#"><img src="./image/16.jpg"></a>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="paginglist">
+        <li>
+          <label for="slide01"></label>
+        </li>
+        <li>
+          <label for="slide02"></label>
+        </li>
+        <li>
+          <label for="slide03"></label>
+        </li>
+        <li>
+          <label for="slide04"></label>
+        </li>
+      </ul>
+    </div>
+    
+    <br>
+
+
+    <div class="hot-title">
+      <p><h4>Hot 게시글</h4></p>
+    </div>
+
+    <div class="board_list_wrap">
+      <div class="board_list">
+          <div class="board_list_body">
+              <div class="item">
+                  <div class="category">최신 시사</div>
+                  <div class="tit"><a href="#"><strong><span class="highlight">[HOT]</span> [청년비서관 박성민 임명 논란] - 전 더불어 민주당 최고의원 박성민, 靑 청년비서관으로 적합한가?</strong></a></div>
+                  <div class="devate">32% --- <span class="highlight"><strong>68% </strong></span></div>
+                  <div class="date">2021-06-20</div>
+                  <div class="view">987</div>
+              </div>
+              <div class="item">
+                  <div class="category">정치 • 행정</div>
+                  <div class="tit"><a href="#"><strong><span class="highlight">[HOT]</span> [국민의힘 신임 당대표 이준석 당선] - 국민의힘 이준석 대표가 차기 정권 교체를 이룰 수 있는가?</strong></a></div>
+                  <div class="devate"><span class="highlight"><strong>59% </strong></span> --- 41%</div>
+                  <div class="date">2021-06-21</div>
+                  <div class="view">897</div>
+              </div>
+              <div class="item">
+                  <div class="category">경제 • 산업</div>
+                  <div class="tit"><a href="#"><strong><span class="highlight">[HOT]</span> [가상화폐 소득 과세 논란] - 가상화폐 거래로 발생하는 소득에 대한 과세를 인정해야 하는가?</strong></a></div>
+                  <div class="devate"><span class="highlight"><strong>63% </strong></span> --- 37%</div>
+                  <div class="date">2021-06-23</div>
+                  <div class="view">486</div>
+              </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
