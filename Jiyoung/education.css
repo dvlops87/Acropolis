@@ -79,16 +79,7 @@ nav {
 .contents ul li:nth-child(3) {
     margin-right: 0;
 }
-.contents ul li .imgBox {
-    width: 350px; height: 350px;background: url(image/1.jpg
-)no-repeat left 0px top 0px/cover; padding: 30px; box-sizing: border-box; color:#fff;margin-bottom: 30px; 
-}
-.contents ul li:nth-child(2) .imgBox {
-    background: url(image//2.jpg)no-repeat center/cover;
-}
-.contents ul li:nth-child(3) .imgBox {
-    background: url(image/3.jpg)no-repeat center/cover;
-}
+
 .contents ul li .imgBox > p {
     font-size: 14px; margin-bottom: 15px; 
 }
@@ -138,30 +129,6 @@ a {
 .list_wrap .item:nth-child(3n-2) {
     margin-left: 0;
 }
-.list_wrap .item .image {
-    width: 230px;
-    height: 230px;
-    background-color: #ddd;
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    background-size: cover;
-}
-
-.list_wrap .item1 .image { background-image: url(/image/2.jpg); }
-.list_wrap .item2 .image { background-image: url(image/11.jpg); }
-.list_wrap .item3 .image { background-image: url(image/3.jpg); }
-.list_wrap .item4 .image { background-image: url(image/4.jpg); }
-.list_wrap .item5 .image { background-image: url(image/5.jpg); }
-.list_wrap .item6 .image { background-image: url(image/6.jpg); }
-.list_wrap .item7 .image { background-image: url(image/7.jpg); }
-.list_wrap .item8 .image { background-image: url(image/8.jpg); }
-.list_wrap .item9 .image { background-image: url(image/9.jpg); }
-.list_wrap .item10 .image { background-image: url(/image/10.jpg); }
-.list_wrap .item11 .image { background-image: url(image/1.jpg); }
-.list_wrap .item12 .image { background-image: url(image/12.jpg); }
-.list_wrap .item13 .image { background-image: url(image/13.jpg); }
-.list_wrap .item14 .image { background-image: url(image/14.jpg); }
-.list_wrap .item15 .image { background-image: url(image/15.jpg); }
 
 
 .list_wrap .item .cont {
