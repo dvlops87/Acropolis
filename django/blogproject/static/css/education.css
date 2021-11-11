@@ -1,0 +1,156 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+@font-face {
+    font-family: 'paybooc-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IBMPlexSansKR-Text';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Text.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*reset*/
+* {padding: 0; margin: 0;}
+li {list-style: none;}
+
+/*layout*/
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+h2 {
+    text-align: center;
+    font-family: 'paybooc-Bold';
+    margin-top: 40px;
+}
+h2 > .acropolis {
+    color: #8C6751;
+}
+nav {
+    font-family: 'IBMPlexSansKR-Text';
+    width: 100%; height: 70px;
+    display: flex;  
+    margin: 30px 0px;
+    align-items: center;
+    justify-content: center;
+}
+.nav{
+    padding-left: 30px;
+}
+.categoryChooseBox {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 1500px; height: 100px;
+}
+.categoryChooseBox > div{
+    display:inline-block;
+}
+
+.categoryChoose {
+    width: 110px; height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 2px solid #8C6751;
+    margin: 0px 3px;
+    border-radius: 30px;
+}
+.categoryChoose:hover {
+    background-color: rgb(248, 240, 231);
+}
+.wrap {
+    width: 100%;
+}
+.contents {
+    width: 1000px; background: #F0CBB0; margin: 50px auto;
+}
+.contents h2 {
+    font-size: 38px;  padding: 40px 30px;
+}
+.contents ul {
+    width: 95%;  margin: 0 auto; overflow: hidden; 
+}
+.contents ul li { 
+    float: left; width: 32%; margin-right: 2%;
+}
+.contents ul li:nth-child(3) {
+    margin-right: 0;
+}
+
+.contents ul li .imgBox > p {
+    font-size: 14px; margin-bottom: 15px; 
+}
+.contents ul li .imgBox .slogan {
+    font-size: 24px; font-weight: 500; line-height: 1.2;
+}
+.contents ul li > span {
+    font-size: 14px; font-weight: bold; color: #00d8ff; margin-bottom: 20px; display: block;
+}
+/*span은 인라인속성이므로 margin이 적용되지 않아서 block 속성으로 변경해줘야 margin이 적용됨*/
+.contents ul li .tit {
+    font-size: 24px; line-height: 1.2; margin-bottom: 40px; 
+}
+.contents ul li .tit .sub {
+    font-size: 15px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+.list_wrap {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 100px;
+}
+
+.list_wrap ul {
+    font-size: 0;
+}
+.list_wrap .item {
+    display: inline-block;
+    width: 30%;
+    margin-top: 40px;
+    margin-left: 5%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+.list_wrap .item:nth-child(-n+3) {
+    margin-top: 0;
+}
+.list_wrap .item:nth-child(3n-2) {
+    margin-left: 0;
+}
+
+
+.list_wrap .item .cont {
+    padding: 20px;
+}
+.list_wrap .item p {
+    display: inline-block;
+    font-size: 15px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+.list_wrap .item a {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 30%;
+    padding: 5px 10px;
+    background: #eee;
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+.list_wrap .item a:hover {
+    background: #325cb2;
+    color: #fff;
+}
