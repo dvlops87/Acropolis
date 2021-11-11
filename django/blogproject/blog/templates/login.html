@@ -1,0 +1,160 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="Chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+  <link rel="stylesheet" href="{% static 'css/home_community.css' %}"> 
+  
+    <title>ACROPOLIS</title>
+</head>
+<body>
+    <div class="b-example-divider"></div>
+      <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="{% url 'login' %}" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+              <img src="{% static 'images/logo.png' %}" class="bi me-2" width="80" height="50" role="img" aria-label="Bootstrap">
+            </a>
+            
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="{% url 'education' %}" class="nav-link px-2 link-dark">교육</a></li>
+              <li><a href="{% url 'first' %}" class="nav-link px-2 link-dark">퀴즈</a></li>
+              <li><a href="{% url 'community' %}" class="nav-link px-2 link-dark">커뮤니티</a></li>
+            </ul>
+
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+              <input type="search" class="form-control" placeholder="Search" aria-label="Search">
+            </form>
+            
+            <div class="dropdown text-end">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+                </a>
+
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">마이페이지</a></li>
+                <li><a class="dropdown-item" href="#">나의 퀴즈</a></li>
+                <li><a class="dropdown-item" href="#">나의 게시글</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="{% url 'home' %}">로그아웃</a></li>
+              </ul>
+        </div>
+      </div>
+    </header>
+    
+    <div class="news-title">
+      <p>알아두면 좋은 상식과 지식!</p>
+    </div>
+
+    <div class="slidebox">
+      <input type="radio" name="slide" id="slide01" checked>
+      <input type="radio" name="slide" id="slide02">
+      <input type="radio" name="slide" id="slide03">
+      <input type="radio" name="slide" id="slide04">
+      <ul class="slidelist">
+        <li class="slideitem">
+          <div>
+            <label for="slide04" class="left"></label>
+            <label for="slide02" class="right"></label>
+            <a href="#"><img src="{% static 'images/1.jpg' %}"></a>
+            <a href="#"><img src="{% static 'images/2.jpg' %}"></a>
+            <a href="#"><img src="{% static 'images/3.jpg' %}"></a>
+            <a href="#"><img src="{% static 'images/4.jpg' %}"></a>
+          </div>
+        </li>
+        <li class="slideitem">
+          <div>
+            <label for="slide01" class="left"></label>
+            <label for="slide03" class="right"></label>
+            <a href="#"><img src="{% static 'images/5.jpg' %}"></a>
+            <a href="#"><img src="{% static 'images/6.jpg' %}"></a>
+            <a href="#"><img src="{% static 'images/7.jpg' %}"></a>
+            <a href="#"><img src="{% static 'images/8.jpg' %}"></a>
+          </div>
+        </li>
+        <li class="slideitem">
+          <div>
+            <label for="slide02" class="left"></label>
+            <label for="slide04" class="right"></label>
+            <a href="#"><img src="{% static 'images/9.jpg' %}"></a>
+            <a href="#"><img src="{% static 'images/0.jpg' %}"></a>
+            <a href="#"><img src="{% static 'images/12.jpg' %}"></a>
+            <a href="#"><img src="{% static 'images/15.jpg' %}"></a>
+          </div>
+        </li>
+        <li class="slideitem">
+          <div>
+            <label for="slide03" class="left"></label>
+            <label for="slide01" class="right"></label>
+            <a href="#"><img src="{% static 'images/11.jpg' %}"></a>
+            <a href="#"><img src="{% static 'images/13.jpg' %}"></a>
+            <a href="#"><img src="{% static 'images/14.jpg' %}"></a>
+            <a href="#"><img src="{% static 'images/6.jpg' %}"></a>
+          </div>
+        </li>
+      </ul>
+
+      <ul class="paginglist">
+        <li>
+          <label for="slide01"></label>
+        </li>
+        <li>
+          <label for="slide02"></label>
+        </li>
+        <li>
+          <label for="slide03"></label>
+        </li>
+        <li>
+          <label for="slide04"></label>
+        </li>
+      </ul>
+    </div>
+
+    <br>
+
+    <div class="board_title">
+      <p>이번주 HOT 게시글</p>
+  </div>
+    <div class="board_wrap">
+      <div class="board_list_wrap">
+          <div class="board_list">
+              <div class="top">
+                  <div class="num">카테고리</div>
+                  <div class="title">제목</div>
+                  <div class="writer">글쓴이</div>
+                  <div class="date">작성일</div>
+                  <div class="count">조회</div>
+              </div>
+              <div class="hover">
+                <div class="num"><strong>[최신 시사]</strong></div>
+                <div class="title"><a href="{% url 'view' %}"><strong><span class="highlight">[HOT]</span> [靑, 청년비서관 박성민 임명] - 박성민, 靑 청년비서관으로 적합한가?</strong></a></div>
+                <div class="writer">32% --- <span class="highlight"><strong>68% </strong></span></div>
+                <div class="date">06/25</div>
+                <div class="count">987</div>
+              </div>
+              <div class="hover">
+                <div class="num"><strong>[정치 • 행정]</strong></div>
+                <div class="title"><a href="{% url 'view' %}"><strong><span class="highlight">[HOT]</span> [국힘, 당대표 이준석 당선] - 이준석 대표가 정권 교체를 이룰 수 있나?</strong></a></div>
+                <div class="writer"><span class="highlight"><strong>59% </strong></span> --- 41%</div>
+                <div class="date">06/21</div>
+                <div class="count">897</div>
+              </div>
+              <div class="hover">
+                <div class="num"><strong>[경제 • 산업]</strong></div>
+                <div class="title"><a href="{% url 'view' %}"><strong><span class="highlight">[HOT]</span> [정부, 가상화폐 과세 검토] - 가상화폐에 대한 과세해야 하나?</strong></a></div>
+                <div class="writer"><span class="highlight"><strong>63% </strong></span> --- 37%</div>
+                <div class="date">06/23</div>
+                <div class="count">486</div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </body>
+</html>
